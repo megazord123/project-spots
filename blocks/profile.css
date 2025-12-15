@@ -11,14 +11,6 @@
   border-radius: 8px;
 }
 
-.profile__column {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  max-width: 420px;
-  align-items: center;
-}
-
 .profile__name {
   margin: 0 0 12px;
   font-size: 32px;
@@ -30,6 +22,13 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-width: 420px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   max-width: 420px;
 }
 
@@ -105,6 +104,7 @@
     margin: 0 0 20px;
     text-align: center;
     margin-right: 0;
+    align-items: center;
   }
 
   .profile__add-btn {
