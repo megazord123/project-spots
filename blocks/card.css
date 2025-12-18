@@ -44,11 +44,11 @@
 
 @media screen and (max-width: 627px) {
   .card__image {
-    height: 288px;
+    max-height: 288px;
   }
 }
 @media screen and (max-width: 627px) {
   .card__title {
-    height: 235px;
+    max-height: 235px;
   }
 }
