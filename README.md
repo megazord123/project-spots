@@ -19,11 +19,10 @@
 -This webpage is delpoyed to to GITHUB
 
 -Deployment Link:
-git@github.com:megazord123/se_project_coffeeshop-main.git
 
-## Perfect pitch spots stage 2
+## Link to spots pages
 
-- video link https://drive.google.com/file/d/1uuVpfXozWCh4Dph0y0YrrQodBY5GZ4yb/view?usp=sharing
+-git@github.com:megazord123/project-spots.git
 
 **Intro**
 

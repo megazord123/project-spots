@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +10,7 @@
     <title>spots</title>
   </head>
 
-  <body>
+  <div>
     <div class="page">
       <header class="header">
         <img src="./images/Logo.svg" alt="spots logo" class="header__logo" />
@@ -32,7 +31,7 @@
               Senegalese-American singer, record producer, and entrepreneur. An
               influential figure in modern world... New Post Edit Profile
             </h1>
-            <p class="profile__description">Civil Aviator</p>
+            <p class="profile-description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
               <img src="./images/Pencil.svg" alt="Pencil Icon" />Edit Profile
             </button>
@@ -115,7 +114,49 @@
       <footer class="footer">
         <p class="footer__title">2025 @ spots</p>
       </footer>
-    </div>
-    <script></script>
-  </body>
+      <div class="modal modal_is-hidden">
+      <div class="modal__container">
+      <button type="button" class="modal__close-btn">x</button>
+      <h2 class ="modal__title">Edit profile</h2>
+      <form class="modal__form>">
+        <label for="profile-description-input" class="modal__lable">Name
+<input id="profile-name-input" type="text" class="modal__input" placeholder="type your name"/>
+
+
+        </label>
+
+       <label for="profile-description-input" class="modal__lable">Description
+<input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself"/>
+</label>
+<button type="submit" class="modal__submit-btn">save</button>
+</form>
+    </div>  
+  </div>
+        <div class="modal modal__is-hidden">
+      <div class="modal__container">
+      <button type="button" class="modal__close-btn">x</button>
+      <h2 class ="modal__title">New post</h2>
+      <form class="modal__form>">
+        <label for="profile-description-input" class="modal__lable">Image Link
+<input id="profile-name-input"
+ type="text" 
+ class="modal__input"
+  placeholder="type your name"/>
+
+
+        </label>
+<label for="profile-description-input" class="modal__lable">Name
+<input id="profile-description-input"
+ type="text"
+  class="modal__input" 
+  placeholder="Describe yourself"/>
+</label>
+<button type="submit" 
+class="modal__submit-btn">save</button>
+</form>
+    </div>  
+  </div>
+</div>
+
+ </body>
 </html>
