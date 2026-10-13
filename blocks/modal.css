@@ -98,7 +98,7 @@
   width: 40px;
   height: 40px;
   top: 40px;
-  right: -525px;
+  right: -520px;
   background-image: url(../images/Close\ Icon.svg);
   background-size: contain;
   background-color: transparent;
@@ -111,7 +111,7 @@
 
 .modal__close-btn:hover {
   opacity: 1;
-  background-image: url(../images/Property\ 1=Variant3\ \(1\).svg);
+  background-image: url(../images/white\ x\ button.svg);
 }
 
 .modal__close_type_preview {
@@ -186,20 +186,11 @@
   color: #fff;
 }
 
-@media screen and (max-width: 627px) {
-  .modal__close_type_preview {
-    top: -48px;
-    right: 0;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .modal__content {
     padding: 12px 12px 12px;
   }
-}
 
-@media screen and (max-width: 480px) {
   .modal {
     flex-direction: column;
     align-items: center;
@@ -208,6 +199,11 @@
 }
 
 @media screen and (max-width: 627px) {
+  .modal__close_type_preview {
+    top: -48px;
+    right: 0;
+  }
+
   .modal__container {
     padding: 20px;
   }
