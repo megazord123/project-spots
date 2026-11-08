@@ -139,6 +139,8 @@
   margin: 0 0 24px;
   color: #212121;
   font-weight: 500;
+  margin-bottom: 32px;
+  display: block;
 }
 
 .modal__input {
@@ -152,9 +154,16 @@
   border: 1px solid #21212166;
 }
 
-.modal__input::placeholder {
-  color: #2121214d;
-  opacity: 30%;
+.modal__input_type_error {
+  border:
+    1px solid red,
+    (255, 0, 0, 0.6);
+}
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  color: red;
 }
 
 .modal__submit-btn {
@@ -184,6 +193,11 @@
 
 .modal__caption {
   color: #fff;
+}
+
+.modal__submit-btn.modal_button_disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 @media screen and (max-width: 480px) {

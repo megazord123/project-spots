@@ -34,8 +34,9 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Images**
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+**project-pitch stage2 link**
 
+https://drive.google.com/file/d/1Q-_R6-WpegeKeT4bJo5z3L-YDJzTqqYh/view?usp=sharing
 **GITHUB LINKS**
 
 Good luck and have fun!
