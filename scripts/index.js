@@ -101,17 +101,15 @@ function getCardElement(data) {
 }
 
 function handleOverlayClick(evt) {
-  if (evt.target.class.contain("modal")) {
-    closeModal(evt.target);
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
   }
 }
-function handelEscape(evt) {
-  if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_is-open");
 
-    if (openModal) {
-      closeModal(openModal);
-    }
+function handeEscape(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    if (openedModal) closeModal(openModal);
   }
 }
 

@@ -199,7 +199,7 @@
   color: #fff;
 }
 
-.modal__submit-btn.modal_button_disabled {
+.modal_button_disabled {
   opacity: 0.5;
   cursor: default;
 }
