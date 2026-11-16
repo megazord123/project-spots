@@ -38,5 +38,5 @@ This project is made so all the elements are displayed correctly on popular scre
 
 https://drive.google.com/file/d/1Q-_R6-WpegeKeT4bJo5z3L-YDJzTqqYh/view?usp=sharing
 **GITHUB LINKS**
-
+-git@github.com:megazord123/project-spots.git
 Good luck and have fun!
