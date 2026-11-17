@@ -106,10 +106,10 @@ function handleOverlayClick(evt) {
   }
 }
 
-function handeEscape(evt) {
+function handleEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_is-opened");
-    if (openedModal) closeModal(openModal);
+    if (openedModal) closeModal();
   }
 }
 
@@ -117,14 +117,14 @@ function openModal(modal) {
   modal.classList.add("modal_is-opened");
 
   modal.addEventListener("click", handleOverlayClick);
-  document.addEventListener("keyup", handelEscape);
+  document.addEventListener("keyup", handleEscape);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 
   modal.removeEventListener("click", handleOverlayClick);
-  document.removeEventListener("keyup", handelEscape);
+  document.removeEventListener("keyup", handleEscape);
 }
 
 editProfileBtn.addEventListener("click", function () {
