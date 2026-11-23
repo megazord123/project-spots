@@ -109,7 +109,7 @@ function handleOverlayClick(evt) {
 function handleEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_is-opened");
-    if (openedModal) closeModal();
+    if (openedModal) closeModal(openedModal);
   }
 }
 
@@ -119,7 +119,6 @@ function openModal(modal) {
   modal.addEventListener("click", handleOverlayClick);
   document.addEventListener("keyup", handleEscape);
 }
-
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 
@@ -136,7 +135,7 @@ editProfileBtn.addEventListener("click", function () {
 });
 
 addCardBtn.addEventListener("click", function () {
-  resetValidation(addCardFormEl, settings);
+  disableButton(addCardFormEl, settings);
   openModal(addCardModal);
 });
 
@@ -162,7 +161,7 @@ editProfileForm.addEventListener("submit", function (evt) {
 });
 
 addCardFormEl.addEventListener("submit", function (evt) {
-  evt.preventDefault();
+  evt.preventDefault(disableButton);
 
   const newCardData = {
     name: captionInputEl.value,
@@ -174,7 +173,7 @@ addCardFormEl.addEventListener("submit", function (evt) {
   cardsList.prepend(newCardElement);
 
   addCardFormEl.reset();
-  resetValidation(addCardFormEl, settings);
+  disableButton(evt.submitter, settings);
 
   closeModal(addCardModal);
 });
